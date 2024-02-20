@@ -148,6 +148,9 @@ h1 {
 }
 
 .lbl {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   position: relative;
   margin: 0 auto;
   width: 113px;
