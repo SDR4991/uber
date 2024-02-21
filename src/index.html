@@ -6,23 +6,37 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>UBER</title>
 	<link rel="icon" href="icons/favicon.ico" type="image/x-icon">
-	<link rel="stylesheet" href="css/fonts.css">
 	<link rel="stylesheet" href="css/bootstrap-reboot.min.css">
 	<link rel="stylesheet" href="css/bootstrap-grid.min.css">
 	<script src="https://kit.fontawesome.com/3af4d07be6.js" crossorigin="anonymous"></script>
 	<link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
+	<div class="modal">
+		<div class="modal__window">
+			<button class=modal-close>&times;</button>
+			<form class="modal__form">
+				<h3 class="modal__form-title">Fill up and we will contact you</h3>
+				<label for="text">Your Name</label>
+				<input type="text" id="text" placeholder="Your Name" required>
+				<label for="phone">Your Phone</label>
+				<input type="phone" id='phone' placeholder="Your contact phone" required>
+				<label for="email">Your E-Mail</label>
+				<input type="email" id='email' placeholder="Your email adress" required>
+				<button class="modal__form-button">Получить консультацию</button>
+			</form>
+		</div>
+	</div>
 	<header>
 		<nav>
 			<div class="container">  
 				<ul class="menu">
-					<li class="menu_item"><a href="#" class="menu_link">Главная</a></li>
-					<li class="menu_item"><a href="#require" class="menu_link">Со своим автомобилем</a></li>
-					<li class="menu_item"><a href="#require" class="menu_link">На автомобиле компании</a></li>
-					<li class="menu_item"><a href="#require"class="menu_link">Требования</a></li>
-					<li class="menu_item"><a href="#world" class="menu_link">Контакты</a></li>
-					<li class="menu_item"><a href="#footer" class="menu_link">Оставить заявку</a></li>
+					<li class="menu_item"><a href="#" class="menu_link">Main Page</a></li>
+					<li class="menu_item"><a href="#require" class="menu_link">With own car</a></li>
+					<li class="menu_item"><a href="#require" class="menu_link">Without own car</a></li>
+					<li class="menu_item"><a href="#require"class="menu_link">Requirements</a></li>
+					<li class="menu_item"><a href="#world" class="menu_link">Contacts</a></li>
+					<li class="menu_item"><a href="#footer" class="menu_link">Send your request</a></li>
 				</ul>
 			</div>
 			<div class="hamburger">
@@ -37,22 +51,22 @@
 				<div class="row">
 					<div class="col-6 col-md-4 offset-md-1">
 						
-						<div class="subheader_off">Официальный партнер Uber</div>            
+						<div class="subheader_off">Official Uber partners</div>            
 					</div>
 					<div class="xs-hidden col-md-3 offset-md-1 col-xl-2 offset-xl-1">
-						<div class="subheader_call">Звоните нам ежедневно</div>
-						<a href="tel:8957970988" class="subheader_number">9 99 99 99 99</a>
+						<div class="subheader_call">Our contact phone</div>
+						<a href="tel:999999999" class="subheader_number">+9 99 99 99 99</a>
 					</div>
 					<div class="col-5 offset-1 col-md-2">
-						<a href="tel:8957970988" class="xs-visible subheader_number">8 99 797 99 88</a>
-						<button class="subheader_btn">Заказать звонок</button>
+						<a href="tel:999999999" class="xs-visible subheader_number">9 99 99 99 99</a>
+						<button class="subheader_btn main_btn">Ask for call</button>
 					</div>
 				</div>
 			</div>
 			
 		</div>
 	</header>
-
+	
 	<section class="promo">
 		<div class="container">
 			<div class="row">
@@ -64,7 +78,7 @@
 						<br><br>
 						Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum deleniti laboriosam aut dolor beatae similique veritatis libero delectus, ab consequatur eaque illum magnam aliquid, iusto quibusdam ex. Voluptatibus, molestiae excepturi!
 					</div>
-					<button class="promo_btn">
+					<button class="promo_btn main_btn">
 						ОТПРАВИТЬ ЗАЯВКУ!
 					</button>
 				</div>
@@ -123,9 +137,7 @@
 							<div class="adv_text">
 								Мы выплачиваем заработную плату на личную банковскую карту водителя! Вам не нужно оформлять ООО, ИП, платить налоги, подавать декларацию, оплачивать бухгалтерские услуги и ведение банковского счета.
 							</div>
-							
 						</div>
-
 					</div>
 				</div>
 
@@ -143,7 +155,6 @@
 								тывать только утром, вечером, в выходные или праздничные дни!         
 							</div>
 						</div>
-
 					</div>
 				</div>
 
@@ -160,7 +171,6 @@
 								Мы подключаем дистанционно и бесплатно, Вам нет необходимости приезжать к нам! Вы присылаете нам копии документов, мы регистрируем Вас и присылаем данные для подключения, через 1-2 дня Вы можете начинать работать!                           
 							</div>
 						</div>
-
 					</div>
 				</div>
 				<div class="col-md-6">
@@ -379,7 +389,6 @@
 						<a href="#">блог</a>
 						<a href="#">о нас</a>
 					</div>
-					<a href="#" class="footer_links_lang">Русский</a>
 				</div>
 			</div>
 			<div>
@@ -390,7 +399,7 @@
 				</div>
 			</div>
 		</div>
-	</footer>
+	</footer>	
 	<script src="js/script.js"></script>
 </body>
 </html>
