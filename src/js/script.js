@@ -2,6 +2,8 @@ const btn = document.querySelectorAll('.main_btn');
 const modal = document.querySelector('.modal');
 const close = document.querySelector('.modal-close');
 
+
+//Modals
 btn.forEach(item=>{
     item.addEventListener('click',()=>{
         modal.style.display = 'block';
@@ -21,6 +23,15 @@ modal.addEventListener('click',(e)=>{
     }
 })
 
+function showModalByTime(selector,time){
+    setTimeout(()=>{
+        document.querySelector(selector).style.display = 'block';
+        document.body.style.overflow = 'hidden';
+    },time)
+}
+
+
+//Hamburger
 window.addEventListener('DOMContentLoaded', () => {
     const menu = document.querySelector('.menu'),
     menuItem = document.querySelectorAll('.menu_item'),
@@ -38,3 +49,5 @@ window.addEventListener('DOMContentLoaded', () => {
         })
     })
 })
+
+/* showModalByTime('.modal',5000); */
