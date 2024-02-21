@@ -156,9 +156,8 @@
 		&_off
 			display: none
 		&_logo
-			margin-top: 22px
-			&_img
-				width: 100%
+			margin-top: 20px
+			width: 50%
 
 		&_number
 			color: #ffffff
@@ -263,9 +262,12 @@
 			width: 253px
 			margin: 0 auto
 		&_wrapper
+			justify-content: center
+			align-items: center
 			flex-direction: column
 			padding-top: 22px
-
+		&_social
+			width: 195px
 		&_wrapper > div 
 			margin-bottom: 20px
 			&:nth-child(1)
@@ -275,18 +277,21 @@
 			&:nth-child(3)
 				order: 3
 		&_links 
-			width: 290px 
+			width: 225px 
 			&_main 
+				display: flex
+				justify-content: space-between
+				width: 205px
 				padding: 0
-				font-size: 14px
+				font-size: 12px
+				a
+					font-size: 12px
 			&_sub 
 				flex-wrap: wrap
 				justify-content: center
 				a 
 					margin: 0 7px
-			&_lang 
-				margin-top: 10px
-		
-
-
+	.scroll-up
+		height: 30px
+		right: 10px
 		

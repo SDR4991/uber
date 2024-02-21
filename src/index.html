@@ -8,12 +8,13 @@
 	<link rel="icon" href="icons/favicon.ico" type="image/x-icon">
 	<link rel="stylesheet" href="css/bootstrap-reboot.min.css">
 	<link rel="stylesheet" href="css/bootstrap-grid.min.css">
+	<link rel="stylesheet" href="css/animate.min.css">
 	<script src="https://kit.fontawesome.com/3af4d07be6.js" crossorigin="anonymous"></script>
 	<link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
-	<div class="modal">
-		<div class="modal__window">
+	<div class="modal" >
+		<div class="modal__window animate__animated animate__fadeIn" >
 			<button class=modal-close>&times;</button>
 			<form class="modal__form">
 				<h3 class="modal__form-title">Get started</h3>
@@ -50,8 +51,10 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-6 col-md-4 offset-md-1">
-						
-						<div class="subheader_off">Official Uber partners</div>            
+						<div class="subheader_off">Official Uber partners</div>  
+						<a href="#" >
+							<img class="subheader_logo" src="./icons/Uber.png"  alt="logo">
+						</a>          
 					</div>
 					<div class="xs-hidden col-md-3 offset-md-1 col-xl-2 offset-xl-1">
 						<div class="subheader_call">Our contact phone</div>
@@ -350,11 +353,12 @@
 
 		</div>
 	</section>
-
+	<div class="scroll-up animate__animated animate__slideInUp" id="scroll-up" hidden>
+        <a href="#" class="scroll-up__icon" id="up"><img src="icons/chevron-up-solid.svg" alt="up"></a>
+    </div>
 	<footer id="footer">
 		<div class="footer_divider"></div>
 		<div class="footer_wrapper">
-			<div>
 				<div class="footer_social">
 					<a href="https://www.facebook.com/" class="footer_social_item">
 						<i class="fab fa-facebook-f"></i>
@@ -369,8 +373,7 @@
 						<i class="fab fa-instagram"></i>
 					</a>
 				</div>
-			</div>
-			<div>
+			
 				<div class="footer_links">
 					<div class="footer_links_main">
 						<a href="#">Main Page</a>
@@ -385,16 +388,17 @@
 						<a href="#">About Us</a>
 					</div>
 				</div>
-			</div>
-			<div>
+			
+			
 				<div class="footer_mobile">
 					<a href="#">
 						<img src="icons/links.png" alt="App Store" class="footer_mobile_img">
 					</a>
 				</div>
-			</div>
+			
 		</div>
-	</footer>	
+	</footer>
+	
 	<script src="js/script.js"></script>
 </body>
 </html>

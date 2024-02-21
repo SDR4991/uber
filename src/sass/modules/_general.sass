@@ -1,3 +1,4 @@
+
 nav
 	position: relative
 	height: 53px
@@ -36,7 +37,7 @@ nav
 	height: 87px
 	background: rgba(0, 0, 0, 0.6)
 	&_off
-		margin-top: 24px
+		margin-top: 10px
 		letter-spacing: 2px
 		opacity: 0.5
 		font-weight: 700
@@ -298,6 +299,11 @@ h1
 		margin: 0 auto
 		padding-top: 92px
 		margin-top: 30px
+		border-radius: 5px
+		box-shadow: 0px 5px 10px 10px rgba(0, 0, 0, 0.21)
+		&:hover
+			cursor: pointer
+			transform: translateY(-5px)
 		&_1
 			background: url('../icons/cart_1.png') center (center / cover) no-repeat
 		&_2
@@ -349,7 +355,7 @@ h1
 			&:hover
 				&:before,&:after
 					background-color: $second_color
-
+	
 .choice
 	position: relative
 	min-height: 897px
@@ -520,3 +526,20 @@ a
 
 .xs-visible
 	display: none
+
+.scroll-up
+	position: fixed
+	height: 40px
+	width: 40px
+	right: 30px
+	bottom: 60px
+	outline: none
+	user-select: none
+	z-index: 10
+	&__icon
+		color: wh1itesmoke
+		object-fit: contain
+		text-decoration: none
+		user-select: none
+	&:active
+		transform: translate(0, 0.1rem)
